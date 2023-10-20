@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100;400;900&display=swap");
+
+* {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+ol {
+  list-style: inside;
+}
+
+ol li::before {
+  content: "- ";
+  color: #ccc;
+}
+
+.card {
+  font-weight: 900;
+  text-align: center;
+  width: 200px;
+  background-color: gray;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+}
+
+.card p {
+  font-style: normal;
+}
+
+p {
+  font-style: italic;
+}
+
+p::before {
+  content: ">";
+  font-size: large;
+  font-weight: 900;
+  background-color: red;
+}
+
+p::before,
+p::after {
+  background-color: #ccc;
+}
+
+p::after {
+  content: "End";
+}
+
+.global-block {
+  margin: 0 auto;
+  width: 50%;
+  height: 50vh;
+  background-color: #ccc;
+}
+
+.global-block .block {
+  width: 50%;
+  height: 50%;
+  background-color: burlywood;
+  margin: 20px 10px 15px;
+  padding: 20px 10px 20px 10px;
+}
+
+.global-block .inner-block {
+  width: 50%;
+  height: 50%;
+  padding-left: 20px;
+  background-color: aqua;
+}
+
+div p {
+  color: red;
+}
+div > p {
+  color: blue;
+}
